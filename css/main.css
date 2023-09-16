@@ -1,0 +1,64 @@
+:root {
+  --main-color: #F78CA2;
+  --main-color2: #F9DEC9;
+  --btn-color: #D80032;
+  --btn-hover: #3D0C11;
+}
+* {
+  transition: all linear 1s;
+}
+nav {
+  background-color: var(--main-color);
+  display: flex;
+  align-items: center;
+}
+.leftfloat {
+  position: absolute;
+  top: 0;
+  left: -240px;
+  height: 100%;
+  width: 250px;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+.leftfloat .colors h1 {
+  color: white;
+}
+.leftfloat .colors .colorbtns {
+  justify-content: center;
+  opacity: 0.8;
+}
+.leftfloat .colors .colorbtns .colorbtn {
+  content: '';
+  width: 50px;
+  height: 50px;
+}
+.leftfloat .colors .colorbtns .colorbtn:nth-child(1) {
+  background-color: #F78CA2;
+}
+.leftfloat .colors .colorbtns .colorbtn:nth-child(2) {
+  background-color: #176B87;
+}
+.leftfloat .colors .colorbtns .colorbtn:nth-child(3) {
+  background-color: #FFA1F5;
+}
+.content {
+  background-color: var(--main-color2);
+}
+.content .container {
+  justify-content: center;
+}
+.content .pbox {
+  background-color: var(--main-color);
+  justify-content: center;
+  align-items: center;
+}
+.content .pbox img {
+  max-width: 100%;
+}
+.content .pbox button {
+  background-color: var(--btn-color);
+  border: none;
+}
+.content .pbox button:hover {
+  background-color: var(--btn-hover);
+}
